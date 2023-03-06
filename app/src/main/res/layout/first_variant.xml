@@ -1,0 +1,64 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/left"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="150sp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:hint="Введіть число"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:text="Кнопка"
+        android:textSize="16sp"/>
+
+</LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:layout_toEndOf="@+id/left"
+        android:checked="false"
+        android:onClick="onCheckboxClicked"
+        android:text="Клац"
+        android:textSize="16sp"
+        android:layout_marginStart="30dp"
+        tools:text="Не клац"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox"
+        android:layout_toEndOf="@+id/left"
+        android:onClick="onClick"
+        android:layout_marginStart="30dp"
+        android:text="Кнопка2"/>
+
+</RelativeLayout>
